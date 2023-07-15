@@ -1,0 +1,11 @@
+<div *ngIf="board">
+    <h2>Turno: {{ turn }}</h2>
+    <h3>Pista: {{ clue }}</h3>
+    <div *ngFor="let card of board.cards">
+      <p>{{ card.word }}</p>
+      <p>{{ card.team }}</p>
+      <button (click)="selectCard(card.id)">Seleccionar</button>
+    </div>
+    <button (click)="validateClue()">Validar Pista</button>
+  </div>
+  

@@ -1,0 +1,8 @@
+<div class="main-menu">
+    <h1>Codenames</h1>
+    <p>Selecciona un equipo:</p>
+    <button (click)="joinTeam('RED')" [disabled]="selectedTeam === 'RED'">Unirse al equipo rojo</button>
+    <button (click)="joinTeam('BLUE')" [disabled]="selectedTeam === 'BLUE'">Unirse al equipo azul</button>
+    <button (click)="leaveTeam()" [disabled]="selectedTeam === ''">Salirse</button>
+  </div>
+  
